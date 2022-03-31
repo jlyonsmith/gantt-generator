@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 40px;
+      font-family: 'Lato', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 3fr repeat(12, 1fr);
+      grid-gap: 0px;
+      background-color: #fff;
+      color: #444;
+    }
+
+    .header-item {
+      text-align: center;
+      padding: 10px;
+      font-size: 120%;
+      border-bottom: 3px solid #aaa;
+    }
+
+    .first-header-item {
+        text-align: left;
+    }
+
+    .item {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #ddd;
+      border-right: 2px solid #ddd;
+    }
+
+    .first-item {
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+
+    .last-row {
+      border-bottom: 3px solid #aaa;
+    }
+
+    .bar {
+      display: flex;
+      position: relative;
+      height: 22px;
+      border-radius: 11px;
+    }
+
+    .task-1 {
+      left: 50%;
+      width: 180%;
+      background-color: #007FBE;
+    }
+
+    .task-2 {
+      left: 80%;
+      width: 100%;
+      background-color: #00B570;
+    }
+
+    .task-3 {
+      left: 80%;
+      width: 400%;
+      background-color: #FF9600;
+    }
+  </style>
+</head>
+<body>
+  <h1>A Gantt Chart</h1>
+  <div class="grid">
+    <!-- Header -->
+    <div class="header-item first-header-item">Tasks</div>
+    <div class="header-item">Jan</div>
+    <div class="header-item">Feb</div>
+    <div class="header-item">Mar</div>
+    <div class="header-item">Apr</div>
+    <div class="header-item">May</div>
+    <div class="header-item">Jun</div>
+    <div class="header-item">Jul</div>
+    <div class="header-item">Aug</div>
+    <div class="header-item">Sep</div>
+    <div class="header-item">Oct</div>
+    <div class="header-item">Nov</div>
+    <div class="header-item">Dec</div>
+    <!-- Row 1 -->
+    <div class="item first-item">Task #1</div>
+    <div class="item"><span class="bar task-1"/></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <!-- Row 2 -->
+    <div class="item first-item">Task #2</div>
+    <div class="item"></div>
+    <div class="item"><span class="bar task-2"/></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <!-- Row 3 -->
+    <div class="item first-item last-row">Task #3</div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"><span class="bar task-3"/></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+    <div class="item last-row"></div>
+  </div>
+</body>
